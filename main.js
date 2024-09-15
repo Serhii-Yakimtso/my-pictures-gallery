@@ -8,7 +8,7 @@ import renderGallery from './src/js/render-function';
 // import iziToast from 'izitoast';
 // import 'izitoast/dist/css/iziToast.min.css';
 
-import errorIcon from './src/img/error.svg';
+// import errorIcon from './src/img/error.svg';
 
 // import SimpleLightbox from 'simplelightbox';
 // import 'simplelightbox/dist/simple-lightbox.min.css';
