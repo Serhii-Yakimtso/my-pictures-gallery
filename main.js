@@ -2,8 +2,8 @@
 
 console.log('hello');
 
-import getPictures from './src/js/pixabay-api';
-import renderGallery from './src/js/render-function';
+import getPictures from './src/js/pixabay-api.js';
+import renderGallery from './src/js/render-function.js';
 
 // import iziToast from 'izitoast';
 // import 'izitoast/dist/css/iziToast.min.css';
