@@ -1,5 +1,5 @@
 // функції для HTTP-запитів
-import axios from 'axios';
+import axios from '/axios';
 
 export default async function getPictures(name, page, perPage) {
   const BASE_URL = 'https://pixabay.com/api/';
