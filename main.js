@@ -113,18 +113,18 @@ async function handleShowMorePictires() {
 // ================= functions
 
 // ================= message by iziToast
-function showMessage(text, color, icon = '') {
-  iziToast.show({
-    message: text,
-    messageColor: '#fafafb',
-    messageSize: '16px',
+// function showMessage(text, color, icon = '') {
+//   iziToast.show({
+//     message: text,
+//     messageColor: '#fafafb',
+//     messageSize: '16px',
 
-    iconUrl: icon,
+//     iconUrl: icon,
 
-    position: 'topRight',
-    backgroundColor: color,
-  });
-}
+//     position: 'topRight',
+//     backgroundColor: color,
+//   });
+// }
 
 // ================= delete gallery's elements
 function clearGallery() {
