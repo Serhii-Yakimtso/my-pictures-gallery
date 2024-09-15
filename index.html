@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures gallery</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <form class="form">
+        <input
+          class="input"
+          type="text"
+          name="tag"
+          placeholder="Search images..."
+        />
+        <button class="btn submit" type="submit">Search</button>
+      </form>
+
+      <ul class="gallery-list hidden"></ul>
+      <button class="btn load-more hidden" type="button">Load more</button>
+      <div class="loader hidden"></div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
