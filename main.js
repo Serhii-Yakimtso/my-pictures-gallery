@@ -10,18 +10,18 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import errorIcon from './src/img/error.svg';
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 // import 'simplelightbox/dist/simple-lightbox.modules.js';
 
 const searchForm = document.querySelector('.form');
 const gallery = document.querySelector('.gallery-list');
 const loader = document.querySelector('.loader');
 const btnLoadMore = document.querySelector('.btn.load-more');
-const lightbox = new SimpleLightbox('.gallery-list a', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+// const lightbox = new SimpleLightbox('.gallery-list a', {
+//   captionsData: 'alt',
+//   captionDelay: 250,
+// });
 
 const perPage = 15;
 let page;
@@ -70,7 +70,7 @@ async function handleSearchPictures(e) {
       showBtnLoadMore();
     }
 
-    lightbox.refresh();
+    // lightbox.refresh();
   } catch (error) {
     hideLoader();
 
@@ -100,7 +100,7 @@ async function handleShowMorePictires() {
     hideLoader();
 
     renderGallery(hits, gallery, loader);
-    lightbox.refresh();
+    // lightbox.refresh();
 
     smoothScrolling();
   } catch (error) {
