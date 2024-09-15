@@ -5,8 +5,8 @@ console.log('hello');
 import getPictures from './src/js/pixabay-api';
 import renderGallery from './src/js/render-function';
 
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+// import iziToast from 'izitoast';
+// import 'izitoast/dist/css/iziToast.min.css';
 
 import errorIcon from './src/img/error.svg';
 
@@ -41,7 +41,7 @@ async function handleSearchPictures(e) {
   searchTag = form.elements.tag.value.trim();
 
   if (searchTag === '') {
-    showMessage('Sorry, enter the tag', '#ef4040', errorIcon);
+    // showMessage('Sorry, enter the tag', '#ef4040', errorIcon);
     return;
   }
 
@@ -53,11 +53,11 @@ async function handleSearchPictures(e) {
     const { hits, totalHits } = await getPictures(searchTag, page, perPage);
     if (hits.length === 0) {
       hideLoader();
-      showMessage(
-        'Sorry, there are no images matching your search query. Please try again!',
-        '#ef4040',
-        errorIcon
-      );
+      // showMessage(
+      //   'Sorry, there are no images matching your search query. Please try again!',
+      //   '#ef4040',
+      //   errorIcon
+      // );
       searchForm.reset();
       return;
     }
@@ -74,7 +74,7 @@ async function handleSearchPictures(e) {
   } catch (error) {
     hideLoader();
 
-    showMessage('Oops. Something went wrong', '#ef4040', errorIcon);
+    // showMessage('Oops. Something went wrong', '#ef4040', errorIcon);
   }
 
   searchForm.reset();
@@ -92,10 +92,10 @@ async function handleShowMorePictires() {
 
     if (page * perPage >= maxHits) {
       hideBtnLoadMore();
-      showMessage(
-        "We're sorry, but you've reached the end of search results.",
-        '#34c6eb'
-      );
+      // showMessage(
+      //   "We're sorry, but you've reached the end of search results.",
+      //   '#34c6eb'
+      // );
     }
     hideLoader();
 
@@ -106,7 +106,7 @@ async function handleShowMorePictires() {
   } catch (error) {
     hideLoader();
 
-    showMessage('Oops. Something went wrong', '#ef4040', errorIcon);
+    // showMessage('Oops. Something went wrong', '#ef4040', errorIcon);
   }
 }
 
